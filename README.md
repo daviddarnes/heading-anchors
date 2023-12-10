@@ -6,7 +6,7 @@ A Web Component to add anchor links to headings with IDs.
 
 ## Examples
 
-```
+```html
 <script type="module" src="heading-anchors.js"></script>
 
 <heading-anchors>
