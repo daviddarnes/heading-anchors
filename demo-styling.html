@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Demo of heading-anchors Web Component" />
+    <title>heading-anchors Web Component Demo</title>
+    <script type="module" src="heading-anchors.js"></script>
+
+    <style>
+      a[href^="#"] {
+        display: inline-block;
+        max-inline-size: 1ch;
+        white-space: nowrap;
+        overflow-x: hidden;
+        pointer-events: none;
+        color: transparent;
+        margin-inline-start: 0.5ch;
+      }
+
+      a[href^="#"]::before {
+        content: "#";
+        color: blue;
+        pointer-events: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <heading-anchors position="beforeend">
+      <h1>Heading level 1</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet quos,
+        possimus laboriosam ullam eum consectetur suscipit quidem nam inventore
+        repellat harum ut odio laudantium labore officia, eligendi placeat
+        asperiores at?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet quos,
+        possimus laboriosam ullam eum consectetur suscipit quidem nam inventore
+        repellat harum ut odio laudantium labore officia, eligendi placeat
+        asperiores at?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet quos,
+        possimus laboriosam ullam eum consectetur suscipit quidem nam inventore
+        repellat harum ut odio laudantium labore officia, eligendi
+      </p>
+      <h2 id="heading-level-2">Heading level 2</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
+        repudiandae expedita totam nesciunt quisquam voluptatum eos optio iste
+        sunt temporibus suscipit, et inventore veniam neque corrupti est facere
+        rem incidunt?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
+        repudiandae expedita totam nesciunt quisquam voluptatum eos optio iste
+        sunt temporibus suscipit, et inventore veniam neque corrupti est facere
+        rem incidunt?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
+        repudiandae expedita totam nesciunt quisquam voluptatum eos optio iste
+        sunt temporibus suscipit, et inventore veniam neque corrupti est facere
+        rem incidunt?
+      </p>
+      <h3 id="heading-level-3">Heading level 3</h3>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi
+        eligendi exercitationem, ratione, in delectus vitae veritatis dolorem
+        porro cupiditate quam eaque voluptates. Aliquid reprehenderit iusto
+        blanditiis ea, temporibus perferendis libero.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi
+        eligendi exercitationem, ratione, in delectus vitae veritatis dolorem
+        porro cupiditate quam eaque voluptates. Aliquid reprehenderit iusto
+        blanditiis ea, temporibus perferendis libero.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi
+        eligendi exercitationem, ratione, in delectus vitae veritatis dolorem
+        porro cupiditate quam eaque voluptates. Aliquid reprehenderit iusto
+        blanditiis ea, temporibus perferendis libero.
+      </p>
+      <h2 id="heading-level-2-again">Heading level 2 again</h2>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio mollitia
+        fugit iste, recusandae illo natus laudantium dolores enim facilis,
+        distinctio dolor ipsa doloribus, molestias excepturi quod ratione
+        officia expedita molestiae.
+      </p>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio mollitia
+        fugit iste, recusandae illo natus laudantium dolores enim facilis,
+        distinctio dolor ipsa doloribus, molestias excepturi quod ratione
+        officia expedita molestiae.
+      </p>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio mollitia
+        fugit iste, recusandae illo natus laudantium dolores enim facilis,
+        distinctio dolor ipsa doloribus, molestias excepturi quod ratione
+        officia expedita molestiae.
+      </p>
+      <h4 id="heading-level-4">Heading level 4</h4>
+    </heading-anchors>
+  </body>
+</html>
