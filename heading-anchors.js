@@ -7,6 +7,9 @@ class HeadingAnchors extends HTMLElement {
 
   connectedCallback() {
     this.headings.forEach((heading) => {
+      if (!heading.hasAttribute("tabindex")) {
+        heading.setAttribute("tabindex", -1);
+      }
       heading.insertAdjacentHTML(this.position, this.anchor(heading));
     });
   }
@@ -15,8 +18,6 @@ class HeadingAnchors extends HTMLElement {
     let anchor = document.createElement("a");
     anchor.href = `#${heading.id}`;
     anchor.innerHTML = `Jump to '${heading.textContent}'`;
-
-    anchor.addEventListener("click", heading.setAttribute("tabindex", -1));
 
     return anchor.outerHTML;
   }
