@@ -6,9 +6,27 @@
     <meta name="description" content="Demo of heading-anchors Web Component" />
     <title>heading-anchors Web Component Demo</title>
     <script type="module" src="heading-anchors.js"></script>
+
+    <style>
+      a[href^="#"] {
+        display: inline-block;
+        max-inline-size: 1ch;
+        white-space: nowrap;
+        overflow-x: hidden;
+        pointer-events: none;
+        color: transparent;
+        margin-inline-start: 0.5ch;
+      }
+
+      a[href^="#"]::before {
+        content: "#";
+        color: blue;
+        pointer-events: auto;
+      }
+    </style>
   </head>
   <body>
-    <heading-anchors>
+    <heading-anchors position="beforeend" selector="h2[id]">
       <h1>Heading level 1</h1>
       <p>
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet quos,
@@ -27,7 +45,7 @@
         possimus laboriosam ullam eum consectetur suscipit quidem nam inventore
         repellat harum ut odio laudantium labore officia, eligendi
       </p>
-      <h2 id="heading-level-2" tabindex="2">Heading level 2</h2>
+      <h2 id="heading-level-2">Heading level 2</h2>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
         repudiandae expedita totam nesciunt quisquam voluptatum eos optio iste
