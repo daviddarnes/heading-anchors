@@ -11,18 +11,12 @@ A Web Component to add anchor links to headings with IDs.
 
 <heading-anchors>
   <h2 id="heading-level-2">Heading level 2</h2>
-  <p>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias repudiandae
-    expedita totam nesciunt quisquam voluptatum eos optio iste sunt temporibus
-    suscipit, et inventore veniam neque corrupti est facere rem incidunt?
-  </p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 
   <h3 id="heading-level-3">Heading level 3</h3>
   <p>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi eligendi
-    exercitationem, ratione, in delectus vitae veritatis dolorem porro
-    cupiditate quam eaque voluptates. Aliquid reprehenderit iusto blanditiis ea,
-    temporibus perferendis libero.
+    Excepturi eligendi exercitationem, ratione, in delectus vitae veritatis
+    dolorem porro cupiditate quam eaque voluptates.
   </p>
 </heading-anchors>
 ```
@@ -32,6 +26,8 @@ A Web Component to add anchor links to headings with IDs.
 This Web Component allows you to:
 
 - Add anchor links to headings which have an ID attribute and value
+- Customise which elements will be appended with an anchor link using the `selector` attribute
+- Customise where the anchor link is appended using the `position` attribute
 
 ## Installation
 
@@ -64,6 +60,26 @@ Make sure you include the `<script>` in your project (choose one of these):
   type="module"
   src="https://esm.sh/@daviddarnes/heading-anchors@2.0.0"
 ></script>
+```
+
+### Using `selector` and `position`
+
+By default `heading-anchors` will select all the `h2[id]`, `h3[id]` and `h4[id]` elements within it to append an anchor link to. However with the `selector` attribute you can pass in a different selector string to select:
+
+```html
+<heading-anchors selector="h2[id]">
+  <!-- ... -->
+</heading-anchors>
+```
+
+_Note: It's recommended you use selectors that utilise the `[id]` attribute selector for better reliability_
+
+By default `heading-anchors` will append anchor links right after the element, using the [`insertAdjacentHTML`](https://developer.mozilla.org/en-US/docs/Web/API/Element/insertAdjacentHTML) API. However you can adjust this using the `position` attribute:
+
+```html
+<heading-anchors position="beforeend">
+  <!-- ... -->
+</heading-anchors>
 ```
 
 ## Credit

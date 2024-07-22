@@ -23,7 +23,11 @@ class HeadingAnchors extends HTMLElement {
   }
 
   get headings() {
-    return this.querySelectorAll("h2[id], h3[id], h4[id]");
+    return this.querySelectorAll(this.selector);
+  }
+
+  get selector() {
+    return this.getAttribute("selector") || "h2[id], h3[id], h4[id]";
   }
 
   get position() {
