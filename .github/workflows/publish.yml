@@ -12,6 +12,7 @@ jobs:
       id-token: write
     steps:
       - uses: actions/checkout@v3
+      - run: npx jsr publish
       - uses: actions/setup-node@v3
         with:
           node-version: 16
@@ -20,4 +21,3 @@ jobs:
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
-      - run: npx jsr publish
