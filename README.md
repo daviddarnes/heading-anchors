@@ -50,7 +50,7 @@ Make sure you include the `<script>` in your project (choose one of these):
 <!-- 3rd party CDN, not recommended for production use -->
 <script
   type="module"
-  src="https://www.unpkg.com/@daviddarnes/heading-anchors@2.0.0/heading-anchors.js"
+  src="https://www.unpkg.com/@daviddarnes/heading-anchors@2.0.1/heading-anchors.js"
 ></script>
 ```
 
@@ -58,7 +58,7 @@ Make sure you include the `<script>` in your project (choose one of these):
 <!-- 3rd party CDN, not recommended for production use -->
 <script
   type="module"
-  src="https://esm.sh/@daviddarnes/heading-anchors@2.0.0"
+  src="https://esm.sh/@daviddarnes/heading-anchors@2.0.1"
 ></script>
 ```
 
