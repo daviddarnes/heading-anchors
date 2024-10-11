@@ -2,7 +2,7 @@
 
 A Web Component to add anchor links to headings with IDs.
 
-**[Demo](https://daviddarnes.github.io/heading-anchors/demo.html)** | **[Styling demo](https://daviddarnes.github.io/heading-anchors/demo-styling.html)**
+**[Demo](https://daviddarnes.github.io/heading-anchors/demo.html)** | **[Styling demo](https://daviddarnes.github.io/heading-anchors/demo-styling.html)** | **[Further reading](https://darn.es/heading-anchors-web-component/)**
 
 ## Examples
 
