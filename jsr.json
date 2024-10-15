@@ -1,0 +1,5 @@
+{
+  "name": "@daviddarnes/heading-anchors",
+  "version": "2.0.1",
+  "exports": "./heading-anchors.js"
+}
