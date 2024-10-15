@@ -33,7 +33,7 @@ This Web Component allows you to:
 
 You have a few options (choose one of these):
 
-1. Install via [npm](https://www.npmjs.com/package/@daviddarnes/heading-anchors): `npm install @daviddarnes/heading-anchors`
+1. Install via [npm](https://www.npmjs.com/package/@daviddarnes/heading-anchors): `npm install @daviddarnes/heading-anchors` (also avaialbe on [jsr](https://jsr.io/@daviddarnes/heading-anchors))
 1. [Download the source manually from GitHub](https://github.com/daviddarnes/heading-anchors/releases) into your project.
 1. Skip this step and use the script directly via a 3rd party CDN (not recommended for production use)
 
@@ -50,7 +50,7 @@ Make sure you include the `<script>` in your project (choose one of these):
 <!-- 3rd party CDN, not recommended for production use -->
 <script
   type="module"
-  src="https://www.unpkg.com/@daviddarnes/heading-anchors@2.0.1/heading-anchors.js"
+  src="https://www.unpkg.com/@daviddarnes/heading-anchors@2.0.2/heading-anchors.js"
 ></script>
 ```
 
@@ -58,7 +58,7 @@ Make sure you include the `<script>` in your project (choose one of these):
 <!-- 3rd party CDN, not recommended for production use -->
 <script
   type="module"
-  src="https://esm.sh/@daviddarnes/heading-anchors@2.0.1"
+  src="https://esm.sh/@daviddarnes/heading-anchors@2.0.2"
 ></script>
 ```
 

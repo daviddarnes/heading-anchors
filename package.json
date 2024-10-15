@@ -1,6 +1,6 @@
 {
   "name": "@daviddarnes/heading-anchors",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "A Web Component to add anchor links to headings with IDs",
   "main": "heading-anchors.js",
   "scripts": {
